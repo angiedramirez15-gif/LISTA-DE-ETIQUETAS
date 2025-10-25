@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Aarvark Cafe";
+    src: url(/recursos/tipografia.ttf);
+}
+
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url(/recursos/bg.PNG);
+    font-family: Arial;
+}
+main{
+    position: relative;
+    border: 1px solid #000;
+    width: 1000px;
+    min-height: 300px;
+    margin: 20px auto;
+    background-color: rgba(255,255,255,.8);
+}
+#hprincipal{
+    font-family: "Aarvark Cafe"!important;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    background-image: url(/recursos/bgh.png);
+    background-size: 100%;
+}
+#hprincipal h1{
+    position: absolute;
+    left: 150px;
+    top: 60px;
+}
