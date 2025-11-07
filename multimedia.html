@@ -24,6 +24,7 @@
                 <thead>
                     <tr>
                         <th>Etiqueta</th>
+                        <th>Estructura</th>  
                         <th>Descripcion</th>
                         <th>Propiedades</th>
                         <th>Ejemplo</th>
@@ -32,17 +33,18 @@
                 <tbody>
                     <tr>
                          <td>
-                             <p>Audio</p>
+                             &lt;Audio&gt;
                                  </td>
+                            <td>&lt;audio controls src=<b>"ruta del audio"</b>&gt;</td>
                             <td>
-                                <p><b>autoplay:</b>Un atributo booleano;si se especifica</p>
+                                Esta etiqueta esta diseñada para implementar en el documento un recurso de audio
                             </td>
                             <td>
-                                <p>
-                                    Before HTML5,audio files could only be played in a bowser with
-                                    a plug-in (like flash).The HTML5<b> audio </b>element
-                                    specifies a standard way to embed audio in a web page.
-                                </p>
+                                <div><b>SCR:</b>atributo para poner la fuente del recurso</div>
+                                <div><b>CONTROLS:</b>atributo para ver el diseño visual del elemento en el navegador </div>
+                                <div><b>AUTOPLAY:</b>reproduce el audio atumaticamente al cargar</div>
+                                <div><b>LOOP:</b>repite el audio continuamente</div>
+                                <div><b>MUTED:</b>inicia el audio sin sonido</div>  
                             </td>
                             <td>
                                 <audio controls>
@@ -54,20 +56,69 @@
                                 Your browser does not support the audio element.
                             </audio>
                             </td>
+                        
+                    </tr>
+                    <tr>
+                        <td> &lt;Video&gt; </td>
+                        <td>&lt;video src="/recursos/bunny.mp4" width="500" height="300" controls poster=/recurso/miniatura.png"&gt;&lt;/video&gt;</td>
+                        <td>Esta etiqueta inserta un archivo de video dentro de la página web.</td>
+                        <td>
+                            <div><b>SCR:</b>ruta del archivo de video.</div>
+                            <div><b>CONTROLS:</b> muestra botones de reproducción.</div>
+                            <div><b>AUTOPLAY;</b>reproduce automáticamente (normalmente con sonido apagado).</div> 
+                            <div><b>LOOP:</b>repite el video al finalizar.</div>
+                            <div><b>MUTED:</b>inicia sin sonido.</div>
+                            <div><b>POSTER:</b>imagen miniatura antes de reproducir.</div>
+                            <div><b>WIDTH/HEIGTH:</b> tamaño del reproductor.</div>
                         </td>
-                    </tr>
-                    <tr>
-                        <td> a </td>
-                        <td>Link</td>
-                        <td>Propiedades href</td>
-                        <td>.....</td>
-                    </tr>
-                    <tr>
-                        <td>dic</td>
-                        <td>div</td>
-                        <td>Propiedades id</td>
-                        <td>.....</td>
-                    </tr>
+                    <td>
+                       <video width="360" height="305" controls poster="/recursos/miniatura.png">
+                       <source src="/recursos/bunny.mp4" type="video/mp4">
+                        <source src="/recursos/bunny.webm" type="video/webm">
+                       Tu navegador no soporta el video HTML5.
+                      </video>
+                   </td>
+
+                 </tr>
+                 <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>&lt;img src="/recurso/img.jpg" alt="michael jackson " width="300" height="200"&gt;</td>
+                        <td>Esta etiquetas sirve para Inserta una imagen dentro de la página web.</td>
+                        <td>
+                            <div><b>SCR:</b>ruta o nombre del archivo de imagen.</div>
+                            <div><b>ALT:</b>texto alternativo si la imagen no carga.</div> 
+                            <div><b>WIDTH/HEIGHT:</b>ancho y alto de la imagen.</div> 
+                            <div><b>TITLE:</b>muestra un texto al pasar el cursor.</div>
+                        </td>
+                        <td> 
+                            <img src="/recursos/img.png" alt="michael jackson" width="290" height="230">
+                        </td>
+                </tr>
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>&lt;figure&gt;&lt;img src="foto.jpg" alt="Arte"&gt;&lt;/figure&gt;</td>
+                    <td>Se utiliza para agrupar contenido multimedia o ilustraciones (como imágenes, videos, gráficos o tablas) que complementan el contenido principal del documento. 
+                        Permite que ese contenido sea tratado como una unidad independiente, facilitando su organización y estilo.</td>
+                    <td>
+                        <div><b>CLASS:</b>se usa para aplicar estilos CSS.</div>
+                        <div><b>ID:</b>permite identificar la figura con un nombre único.</div>
+                        <div><b>STYLE:</b>define estilos en línea (color, márgenes, bordes, etc.).</div>
+                    </td>
+                    <td>
+                        <div style="display: flex; justify-content: center; gap: -5px;">
+                        <figure style="width: 13x   0px; margin:0px;">
+                            <img src="/recursos/figure1.png" alt="figure1" style="width: 130px;border-radius: 6px;">
+                        </figure>
+                        <figure style="width: 130px; margin:0px;">
+                            <img src="/recursos/figure2.png" alt="figure2" style="width: 130px;border-radius: 6px;">
+                        </figure>   
+                        <figure style="width: 130px; margin:0px;">
+                           <img src="/recursos/figure3.png" alt="figure3" style="width: 130px;border-radius: 6px;">
+                        </figure>
+                        </div>
+                    </td>
+                </tr>
+
                 </tbody>
             </table>
         </div>

@@ -24,6 +24,7 @@
                 <thead>
                     <tr>
                         <th>Etiqueta</th>
+                        <th>Estructura</th>  
                         <th>Descripcion</th>
                         <th>Propiedades</th>
                         <th>Ejemplo</th>
@@ -31,17 +32,53 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td> a </td>
-                        <td>Link</td>
-                        <td>Propiedades href</td>
-                        <td>.....</td>
-                    </tr>
+                    <td>Input type (text)</td> 
+                    <td>&lt;input type="text"&gt;</td>
+                    <td>Permite al usuario ingresar texto libre, como nombres o palabras.</td>
+                    <td>
+                     <b>placeholder:</b> texto guía dentro del campo.<br>
+                     <b>value:</b> valor por defecto.<br>
+                     <b>maxlength:</b> número máximo de caracteres.<br>
+                     <b>required:</b> campo obligatorio.
+                     </td>
+                     <td><input type="text" placeholder="Escribe tu nombre" style="padding:4px; border-radius:6px;"></td>
+                   </tr>
                     <tr>
-                        <td>dic</td>
-                        <td>div</td>
-                        <td>Propiedades id</td>
-                        <td>.....</td>
+                     <td>Input type(password)</td>
+                     <td>&lt;input type="password"&gt;</td>
+                     <td>Permite ingresar contraseñas ocultando los caracteres.</td>
+                     <td>
+                     <b>placeholder:</b> texto guía.<br>
+                     <b>maxlength:</b> límite de caracteres.<br>
+                     <b>required:</b> campo obligatorio.
+                     </td>
+                     <td><input type="password" placeholder="Contraseña" style="padding:4px; border-radius:6px;"></td>
                     </tr>
+                     <tr>
+                     <td>Input type(email)</td>
+                     <td>&lt;input type="email"&gt;</td>
+                     <td>Campo para ingresar una dirección de correo electrónico válida.</td>
+                     <td>
+                     <b>placeholder:</b> texto guía.<br>
+                     <b>required:</b> hace el campo obligatorio.<br>
+                     <b>pattern:</b> define una expresión regular para validar.
+                     </td>
+                     <td><input type="email" placeholder="correo@ejemplo.com" style="padding:4px; border-radius:6px;"></td>
+                     </tr>
+                      <tr>
+                        <td>Input type(radio)</td>
+                         <td>&lt;input type="radio"&gt;</td>
+                         <td>Permite seleccionar solo una opción dentro de un grupo.</td>
+                         <td>
+                         <b>name:</b> agrupa los botones.<br>
+                         <b>value:</b> valor de la opción.<br>
+                         <b>checked:</b> marca por defecto.
+                     </td>
+                     <td>
+                           <label><input type="radio" name="color" value="rojo"> Rojo</label>
+                           <label><input type="radio" name="color" value="azul"> Azul</label>
+                            </td>
+                      </tr>
                 </tbody>
             </table>
         </div>
